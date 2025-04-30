@@ -1,0 +1,152 @@
+import React from "react";
+import { motion } from "framer-motion";
+import { Brush, Droplet, Sparkles } from "lucide-react";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+
+interface ServiceProps {
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+  price: string;
+  duration: string;
+}
+
+const Service = ({
+  icon,
+  title,
+  description,
+  price,
+  duration,
+}: ServiceProps) => {
+  return (
+    <motion.div
+      whileHover={{ y: -5 }}
+      transition={{ type: "spring", stiffness: 300 }}
+      className="w-full"
+    >
+      <Card className="h-full bg-white border border-pink-100 shadow-sm hover:shadow-md transition-shadow">
+        <CardHeader className="pb-2">
+          <motion.div
+            whileHover={{ rotate: 5 }}
+            className="flex justify-center mb-4"
+          >
+            <div className="p-3 rounded-full bg-pink-50 text-pink-500">
+              {icon}
+            </div>
+          </motion.div>
+          <CardTitle className="text-center text-xl font-medium text-gray-800">
+            {title}
+          </CardTitle>
+        </CardHeader>
+        <CardContent className="text-center">
+          <CardDescription className="text-gray-600 mb-4">
+            {description}
+          </CardDescription>
+        </CardContent>
+        <CardFooter className="flex flex-col items-center pt-0">
+          <p className="text-2xl font-semibold text-pink-600 mb-1">{price}</p>
+          <p className="text-sm text-gray-500">{duration}</p>
+        </CardFooter>
+      </Card>
+    </motion.div>
+  );
+};
+
+const ServicesSection = () => {
+  const services = [
+    {
+      icon: <Brush size={24} />,
+      title: "Nail Painting",
+      description:
+        "Express yourself with our premium polish application. Choose from a wide range of colors for a flawless finish.",
+      price: "$35+",
+      duration: "30-45 minutes",
+    },
+    {
+      icon: <Droplet size={24} />,
+      title: "Gel Coating",
+      description:
+        "Long-lasting, chip-resistant gel polish that keeps your nails looking perfect for weeks with a glossy shine.",
+      price: "$45+",
+      duration: "45-60 minutes",
+    },
+    {
+      icon: <Sparkles size={24} />,
+      title: "Custom Nail Art",
+      description:
+        "Personalized designs created just for you. From simple accents to elaborate patterns, make a statement with custom art.",
+      price: "$55+",
+      duration: "60-90 minutes",
+    },
+  ];
+
+  return (
+    <section
+      className="py-16 px-4 bg-gradient-to-b from-white to-pink-50"
+      id="services"
+    >
+      <div className="max-w-6xl mx-auto">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+          className="text-center mb-12"
+        >
+          <h2 className="text-3xl md:text-4xl font-semibold text-gray-800 mb-2">
+            Our Services
+          </h2>
+          <div className="w-24 h-1 bg-pink-400 mx-auto mb-4"></div>
+          <p className="text-gray-600 max-w-2xl mx-auto">
+            Discover our range of professional nail services designed to keep
+            your hands looking beautiful and well-maintained.
+          </p>
+        </motion.div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {services.map((service, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.2 }}
+              viewport={{ once: true }}
+            >
+              <Service
+                icon={service.icon}
+                title={service.title}
+                description={service.description}
+                price={service.price}
+                duration={service.duration}
+              />
+            </motion.div>
+          ))}
+        </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.6 }}
+          viewport={{ once: true }}
+          className="text-center mt-12"
+        >
+          <p className="text-gray-600 italic mb-6">
+            All services include nail preparation, shaping, and cuticle care
+          </p>
+          <button className="bg-pink-500 hover:bg-pink-600 text-white font-medium py-3 px-8 rounded-full transition-colors shadow-md hover:shadow-lg">
+            View Full Price List
+          </button>
+        </motion.div>
+      </div>
+    </section>
+  );
+};
+
+export default ServicesSection;
