@@ -8,6 +8,7 @@ import { Button } from "./ui/button";
 import { Separator } from "./ui/separator";
 import { motion, AnimatePresence } from "framer-motion";
 import { Nav } from "./Nav";
+import logo from "../../public/assets/images/logo.png";
 
 export default function Home() {
   return (
@@ -109,7 +110,7 @@ export default function Home() {
               <div className="md:w-1/3">
                 <div className="rounded-full overflow-hidden aspect-square">
                   <img
-                    src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&q=80"
+                    src={logo}
                     alt="Devonne"
                     className="w-full h-full object-cover"
                   />
@@ -117,27 +118,36 @@ export default function Home() {
               </div>
               <div className="md:w-2/3">
                 <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                  About Devonne
+                  About{" "}
+                  <span className="bg-gradient-to-r from-pink-400 to-purple-500 pb-2 transition-all duration-300 drop-shadow-sm text-gradient bg-clip-text text-transparent">
+                    Devonne
+                  </span>
                 </h2>
                 <p className="text-gray-600 mb-4">
-                  Hi, I'm Devonne! With over 5 years of experience in nail
-                  artistry, I'm passionate about creating beautiful, unique nail
-                  designs that express your personality and style.
+                  Hi, I'm Devonne! I have over xyz amount of experience and this
+                  is just a sample about page to express who I am or something
+                  like that. I don't really know what to put here man I just
+                  write code n shit.
                 </p>
                 <p className="text-gray-600 mb-6">
-                  I specialize in gel extensions, custom nail art, and creating
-                  a relaxing experience for all my clients. My studio is located
-                  in the heart of the city, offering a tranquil escape from the
-                  urban hustle.
+                  This is a different paragraph, maybe to talk about
+                  specialization or something like that. I'll figure it out
+                  eventually. Just writing sample prompts here to make it seem
+                  like there's something here.
                 </p>
                 <div className="flex space-x-4">
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    className="border-pink-600 text-pink-600 hover:bg-pink-50"
+                  <a
+                    href="https://www.instagram.com/donebydevonne/"
+                    target="_blank"
                   >
-                    <Instagram className="mr-2 h-4 w-4" /> Instagram
-                  </Button>
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      className="border-pink-600 text-pink-600 hover:bg-pink-50"
+                    >
+                      <Instagram className="mr-2 h-4 w-4" /> @donebydevonne
+                    </Button>
+                  </a>
                 </div>
               </div>
             </div>
