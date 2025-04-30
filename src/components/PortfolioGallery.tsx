@@ -11,7 +11,6 @@ import {
 import { Card, CardContent } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogClose } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
-import { motion, AnimatePresence } from "framer-motion";
 
 interface PortfolioItem {
   id: number;

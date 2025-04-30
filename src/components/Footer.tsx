@@ -23,17 +23,17 @@ export const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">Hours</h3>
             <ul className="text-gray-400 space-y-2">
-              <li>Monday - Friday: 10am - 7pm</li>
-              <li>Saturday: 9am - 5pm</li>
-              <li>Sunday: Closed</li>
+              <li>Monday - Friday: Xam - Xpm</li>
+              <li>Saturday: Xam - Xpm</li>
+              <li>Sunday: Closed?</li>
             </ul>
           </div>
           <div>
             <h3 className="text-xl font-bold mb-4">Contact</h3>
             <ul className="text-gray-400 space-y-2">
-              <li>123 Nail Street, Beauty City</li>
+              <li>123 Ya Mama Street, XYZ City</li>
               <li>Phone: (123) 456-7890</li>
-              <li>Email: info@donebydevonne.com</li>
+              <li>Email: info@something.com</li>
             </ul>
           </div>
         </div>
