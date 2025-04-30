@@ -42,6 +42,7 @@ export interface BookingFormData {
 }
 
 const BookingForm = ({ onSubmit = () => {} }: BookingFormProps) => {
+
   const [formData, setFormData] = useState<BookingFormData>({
     name: "",
     email: "",
@@ -53,7 +54,8 @@ const BookingForm = ({ onSubmit = () => {} }: BookingFormProps) => {
   });
 
   const [isSubmitted, setIsSubmitted] = useState(false);
-  const [errors, setErrors] = useState<Partial<BookingFormData>>({});
+  type FormErrors = Partial<Record<keyof BookingFormData, string>>;
+  const [errors, setErrors] = useState<FormErrors>({});
 
   const services = [
     { id: "nail-painting", name: "Nail Painting" },
@@ -82,8 +84,8 @@ const BookingForm = ({ onSubmit = () => {} }: BookingFormProps) => {
   };
 
   const validateForm = () => {
-    const newErrors: Partial<BookingFormData> = {};
-
+    const newErrors: FormErrors = {};
+  
     if (!formData.name.trim()) newErrors.name = "Name is required";
     if (!formData.email.trim()) {
       newErrors.email = "Email is required";
@@ -94,10 +96,11 @@ const BookingForm = ({ onSubmit = () => {} }: BookingFormProps) => {
     if (!formData.service) newErrors.service = "Please select a service";
     if (!formData.date) newErrors.date = "Please select a date";
     if (!formData.time) newErrors.time = "Please select a time";
-
+  
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
+  
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -234,7 +237,7 @@ const BookingForm = ({ onSubmit = () => {} }: BookingFormProps) => {
                         className={cn(
                           "w-full justify-start text-left font-normal",
                           !formData.date && "text-muted-foreground",
-                          errors.date && "border-red-500",
+                          errors.date && "border-red-500"
                         )}
                       >
                         <CalendarIcon className="mr-2 h-4 w-4" />
