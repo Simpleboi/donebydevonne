@@ -13,10 +13,10 @@ export const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a
-                href="#"
-                className="text-gray-400 hover:text-white transition-colors"
+                href="https://www.instagram.com/donebydevonne/"
+                className="text-gray-400 hover:text-white transition-colors flex items-center gap-2" target="_blank"
               >
-                <Instagram className="h-5 w-5" />
+                <Instagram className="h-5 w-5" /> @donebydevonne 
               </a>
             </div>
           </div>

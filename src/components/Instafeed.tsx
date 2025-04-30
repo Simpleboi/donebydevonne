@@ -1,8 +1,13 @@
 import { Button } from "./ui/button";
 import { Instagram } from "lucide-react";
-import img1 from "../../public/assets/images/sample-pic-one.png";
-import img2 from "../../public/assets/images/sample-pic-two.png";
-import img3 from "../../public/assets/images/sample-pic-three.png";
+import img1 from "/assets/images/sample-pic-one.png";
+import img2 from "/assets/images/sample-pic-two.png";
+import img3 from "/assets/images/sample-pic-three.png";
+import img4 from "/assets/images/sample-pic-four.png";
+import img5 from "/assets/images/sample-pic-five.png";
+import img6 from "/assets/images/sample-pic-six.png";
+import img7 from "/assets/images/sample-pic-seven.png";
+import img8 from "/assets/images/sample-pic-eight.png";
 
 const instagramFeed = [
   {
@@ -16,6 +21,26 @@ const instagramFeed = [
   {
     imageSrc: img3,
     link: "https://www.instagram.com/p/C_EZEHVy9hk/?img_index=1",
+  },
+  {
+    imageSrc: img4,
+    link: "https://www.instagram.com/p/C-tT6gPyxx9/?img_index=1",
+  },
+  {
+    imageSrc: img5,
+    link: "https://www.instagram.com/p/C-YzzeJyR_K/?img_index=1",
+  },
+  {
+    imageSrc: img6,
+    link: "https://www.instagram.com/p/C9nSeKNSSei/?img_index=1",
+  },
+  {
+    imageSrc: img7,
+    link: "https://www.instagram.com/p/C83YJp2xZTo/?img_index=1",
+  },
+  {
+    imageSrc: img8,
+    link: "https://www.instagram.com/p/C8YbYMLx5mX/?img_index=1",
   },
 ];
 
@@ -32,9 +57,8 @@ export const InstagramFeed = () => {
         <p className="text-gray-600 text-center mb-8 max-w-2xl mx-auto">
           Stay updated with our latest designs and promotions
         </p>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 px-8">
           {instagramFeed.map(({ imageSrc, link }, index) => (
-            // 2. Wrap the entire card in an <a>
             <a
               key={index}
               href={link}
@@ -54,12 +78,14 @@ export const InstagramFeed = () => {
           ))}
         </div>
         <div className="text-center mt-8 mb-8">
-          <Button
-            variant="outline"
-            className="border-pink-600 text-pink-600 hover:bg-pink-50"
-          >
-            <Instagram className="mr-2 h-4 w-4" /> Follow @donebydevonne
-          </Button>
+          <a href="https://www.instagram.com/donebydevonne/" target="_blank">
+            <Button
+              variant="outline"
+              className="border-pink-600 text-pink-600 hover:bg-pink-50"
+            >
+              <Instagram className="mr-2 h-4 w-4" /> @donebydevonne
+            </Button>
+          </a>
         </div>
       </div>
     </section>

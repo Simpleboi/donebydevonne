@@ -23,16 +23,14 @@ export const AboutMe = () => {
               </span>
             </h2>
             <p className="text-gray-600 mb-4">
-              Hi, I'm Devonne! I have over xyz amount of experience and this is
-              just a sample about page to express who I am or something like
+              Hi, I'm Devonne! I have over [blank] amount of experience and this is
+              just a sample paragraph to express who I am or something like
               that. I don't really know what to put here man I just write code n
               shit.
             </p>
             <p className="text-gray-600 mb-6">
               This is a different paragraph, maybe to talk about specialization
-              or something like that. I'll figure it out eventually. Just
-              writing sample prompts here to make it seem like there's something
-              here.
+              or something like that. I'm just writing filler text so it looks full but this will be replaced with what Devonne says. Did you know that a group of flamingos is called a flamboyance? Shits tuff 
             </p>
             <div className="flex space-x-4">
               <a
