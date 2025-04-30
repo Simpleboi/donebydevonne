@@ -10,7 +10,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Nav } from "./Nav";
 
 export default function Home() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
     <div className="min-h-screen bg-white">
       {/* Navigation */}

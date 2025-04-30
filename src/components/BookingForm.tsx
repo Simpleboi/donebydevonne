@@ -122,7 +122,7 @@ const BookingForm = ({ onSubmit = () => {} }: BookingFormProps) => {
   };
 
   return (
-    <div className="w-full max-w-md mx-auto bg-white p-4 md:p-6" id="booking">
+    <div className="w-full mx-auto bg-white p-4 md:p-6" id="booking">
       <Card className="border-none shadow-lg">
         <CardHeader className="text-center bg-gradient-to-r from-pink-100 to-purple-100 rounded-t-lg">
           <CardTitle className="text-2xl font-bold text-gray-800">
