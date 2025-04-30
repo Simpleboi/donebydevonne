@@ -14,9 +14,10 @@ export const Footer = () => {
             <div className="flex space-x-4">
               <a
                 href="https://www.instagram.com/donebydevonne/"
-                className="text-gray-400 hover:text-white transition-colors flex items-center gap-2" target="_blank"
+                className="text-gray-400 hover:text-white transition-colors flex items-center gap-2"
+                target="_blank"
               >
-                <Instagram className="h-5 w-5" /> @donebydevonne 
+                <Instagram className="h-5 w-5" /> @donebydevonne
               </a>
             </div>
           </div>
@@ -32,8 +33,10 @@ export const Footer = () => {
             <h3 className="text-xl font-bold mb-4">Contact</h3>
             <ul className="text-gray-400 space-y-2">
               <li>123 Ya Mama Street, XYZ City</li>
-              <li>Phone: (123) 456-7890</li>
-              <li>Email: info@something.com</li>
+              <li>Phone: <a href="tel:+">(425) 535-7080</a></li>
+              <li className="hover:text-purple-400 transition-all">
+                Email: <a href="mailto:devonnefarson1@gmail.com?subject=Inquiry For Devonne">devonnefarson1@gmail.com</a>
+              </li>
             </ul>
           </div>
         </div>

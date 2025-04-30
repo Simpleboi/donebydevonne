@@ -66,24 +66,24 @@ const ServicesSection = () => {
       title: "Nail Painting",
       description:
         "Express yourself with our premium polish application. Choose from a wide range of colors for a flawless finish.",
-      price: "$35+",
-      duration: "30-45 minutes",
+      price: "$10+",
+      duration: "5-10 minutes",
     },
     {
       icon: <Droplet size={24} />,
-      title: "Gel Coating",
+      title: "Gel Manicure",
       description:
         "Long-lasting, chip-resistant gel polish that keeps your nails looking perfect for weeks with a glossy shine.",
-      price: "$45+",
-      duration: "45-60 minutes",
+      price: "$1,800+",
+      duration: "5-10 minutes",
     },
     {
       icon: <Sparkles size={24} />,
-      title: "Custom Nail Art",
+      title: "Acrylic Full Set",
       description:
         "Personalized designs created just for you. From simple accents to elaborate patterns, make a statement with custom art.",
-      price: "$55+",
-      duration: "60-90 minutes",
+      price: "$2.50+",
+      duration: "5-10 minutes",
     },
   ];
 

@@ -39,7 +39,7 @@ export const Nav = () => {
           {[
             { href: "#home", label: "Home" },
             { href: "#services", label: "Services" },
-            { href: "#gallery", label: "Gallery" },
+            { href: "#instagram", label: "Gallery" },
             { href: "#booking", label: "Book Now" },
             { href: "#about", label: "About" },
           ].map((item, index) => (
@@ -84,7 +84,7 @@ export const Nav = () => {
               {[
                 { href: "#home", label: "Home" },
                 { href: "#services", label: "Services" },
-                { href: "#gallery", label: "Gallery" },
+                { href: "#instagram", label: "Gallery" },
                 { href: "#booking", label: "Book Now" },
                 { href: "#about", label: "About" },
               ].map((item, index) => (
