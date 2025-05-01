@@ -1,5 +1,6 @@
 import { Instagram } from "lucide-react";
 import { Separator } from "./ui/separator";
+import { Link } from "react-router-dom";
 
 export const Footer = () => {
   return (
@@ -11,14 +12,33 @@ export const Footer = () => {
             <p className="text-gray-400 mb-4">
               Creating beautiful nails for beautiful people.
             </p>
-            <div className="flex space-x-4">
+            <div className="flex flex-col gap-2">
               <a
                 href="https://www.instagram.com/donebydevonne/"
-                className="text-gray-400 hover:text-white transition-colors flex items-center gap-2"
+                className="text-gray-400 hover:text-white transition-colors flex items-center gap-2 border border-red-500"
                 target="_blank"
               >
                 <Instagram className="h-5 w-5" /> @donebydevonne
               </a>
+              <p>
+                This website was created by Nate, click{" "}
+                <a
+                  href="https://n8jsx.com/"
+                  target="_blank"
+                  className="bg-gradient-to-r from-pink-400 to-purple-500 pb-2 transition-all duration-300 drop-shadow-sm text-gradient bg-clip-text text-transparent"
+                >
+                  here
+                </a>{" "}
+                to learn more.
+              </p>
+              <a
+                href="https://www.instagram.com/donebydevonne/"
+                className="text-gray-400 hover:text-white transition-colors flex items-center gap-2 border border-red-500"
+                target="_blank"
+              >
+                <Instagram className="h-5 w-5" /> @n8.jsx
+              </a>
+              <a href="">yo</a>
             </div>
           </div>
           <div>
@@ -47,7 +67,10 @@ export const Footer = () => {
         </div>
         <Separator className="my-8 bg-gray-800" />
         <div className="text-center text-gray-500 text-sm">
-          © {new Date().getFullYear()} Done by Devonne. All rights reserved.
+          <p>
+            © {new Date().getFullYear()} Done by Devonne. All rights reserved.
+          </p>
+          <Link to="/admin" className="hover:text-purple-400 transition-all">Admin</Link>
         </div>
       </div>
     </footer>
