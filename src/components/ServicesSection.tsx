@@ -101,7 +101,7 @@ const ServicesSection = () => {
           className="text-center mb-12"
         >
           <h2 className="text-3xl md:text-4xl font-semibold text-gray-800 mb-2">
-            Our Services
+            Our <span className="bg-gradient-to-r from-pink-400 to-purple-500 pb-2 transition-all duration-300 drop-shadow-sm text-gradient bg-clip-text text-transparent">Services</span>
           </h2>
           <div className="w-24 h-1 bg-pink-400 mx-auto mb-4"></div>
           <p className="text-gray-600 max-w-2xl mx-auto">

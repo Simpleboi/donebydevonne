@@ -37,9 +37,7 @@ const PortfolioGallery = ({
   const handleLike = (id: number, e: React.MouseEvent) => {
     e.stopPropagation();
     setLikedItems((prev) =>
-      prev.includes(id)
-        ? prev.filter((itemId) => itemId !== id)
-        : [...prev, id],
+      prev.includes(id) ? prev.filter((itemId) => itemId !== id) : [...prev, id]
     );
   };
 
@@ -48,7 +46,10 @@ const PortfolioGallery = ({
       <div className="container mx-auto px-4">
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-2">
-            Our Work
+            Our{" "}
+            <span className="bg-gradient-to-r from-pink-400 to-purple-500 pb-2 transition-all duration-300 drop-shadow-sm text-gradient bg-clip-text text-transparent">
+              Work
+            </span>
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto mb-6">
             Browse through our gallery of stunning nail designs created by
@@ -64,7 +65,7 @@ const PortfolioGallery = ({
                 "rounded-full",
                 activeFilter === "all"
                   ? "bg-pink-500 hover:bg-pink-600"
-                  : "border-pink-300 text-pink-600 hover:bg-pink-50",
+                  : "border-pink-300 text-pink-600 hover:bg-pink-50"
               )}
             >
               All Designs
@@ -77,7 +78,7 @@ const PortfolioGallery = ({
                 "rounded-full",
                 activeFilter === "marble"
                   ? "bg-pink-500 hover:bg-pink-600"
-                  : "border-pink-300 text-pink-600 hover:bg-pink-50",
+                  : "border-pink-300 text-pink-600 hover:bg-pink-50"
               )}
             >
               Marble
@@ -90,7 +91,7 @@ const PortfolioGallery = ({
                 "rounded-full",
                 activeFilter === "glitter"
                   ? "bg-pink-500 hover:bg-pink-600"
-                  : "border-pink-300 text-pink-600 hover:bg-pink-50",
+                  : "border-pink-300 text-pink-600 hover:bg-pink-50"
               )}
             >
               Glitter
@@ -103,7 +104,7 @@ const PortfolioGallery = ({
                 "rounded-full",
                 activeFilter === "art"
                   ? "bg-pink-500 hover:bg-pink-600"
-                  : "border-pink-300 text-pink-600 hover:bg-pink-50",
+                  : "border-pink-300 text-pink-600 hover:bg-pink-50"
               )}
             >
               Nail Art
@@ -153,7 +154,7 @@ const PortfolioGallery = ({
                               "rounded-full",
                               likedItems.includes(item.id)
                                 ? "text-pink-500"
-                                : "text-gray-400 hover:text-pink-500",
+                                : "text-gray-400 hover:text-pink-500"
                             )}
                             onClick={(e) => handleLike(item.id, e)}
                           >
@@ -162,7 +163,7 @@ const PortfolioGallery = ({
                                 "h-5 w-5 transition-all",
                                 likedItems.includes(item.id)
                                   ? "fill-pink-500"
-                                  : "",
+                                  : ""
                               )}
                             />
                             <span className="sr-only">Like</span>
@@ -185,7 +186,7 @@ const PortfolioGallery = ({
                 onClick={() => setCurrentIndex(index)}
                 className={cn(
                   "w-2 h-2 rounded-full transition-all duration-300",
-                  index === currentIndex ? "bg-pink-500 w-4" : "bg-gray-300",
+                  index === currentIndex ? "bg-pink-500 w-4" : "bg-gray-300"
                 )}
                 aria-label={`Go to slide ${index + 1}`}
               />
@@ -251,7 +252,7 @@ const PortfolioGallery = ({
                       Book This Design
                     </Button>
 
-                    <div className="mt-4 flex justify-center">
+                    {/* <div className="mt-4 flex justify-center">
                       <Button
                         variant="outline"
                         size="sm"
@@ -259,7 +260,7 @@ const PortfolioGallery = ({
                           "rounded-full border-pink-300",
                           likedItems.includes(selectedItem.id)
                             ? "text-pink-500"
-                            : "text-gray-500",
+                            : "text-gray-500"
                         )}
                         onClick={() =>
                           handleLike(selectedItem.id, {} as React.MouseEvent)
@@ -270,14 +271,14 @@ const PortfolioGallery = ({
                             "h-4 w-4 mr-2",
                             likedItems.includes(selectedItem.id)
                               ? "fill-pink-500"
-                              : "",
+                              : ""
                           )}
                         />
                         {likedItems.includes(selectedItem.id)
                           ? "Saved to Favorites"
                           : "Save to Favorites"}
                       </Button>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               )}
@@ -295,7 +296,7 @@ const defaultItems: PortfolioItem[] = [
     id: 1,
     title: "Pink Marble",
     image:
-      "https://images.unsplash.com/photo-1613457191892-75e6a6aef06d?w=800&q=80",
+      "https://images.unsplash.com/photo-1632345031435-8727f6897d53?w=800&q=80",
     description: "Elegant pink marble effect with gold accents",
     likes: 24,
   },
@@ -311,7 +312,7 @@ const defaultItems: PortfolioItem[] = [
     id: 3,
     title: "Crystal Accents",
     image:
-      "https://images.unsplash.com/photo-1631214524020-3adf3a2ae6cc?w=800&q=80",
+      "https://images.unsplash.com/photo-1601055283742-8b27e81b5553?w=800&q=80",
     description: "Sophisticated design with crystal embellishments",
     likes: 32,
   },
@@ -319,7 +320,7 @@ const defaultItems: PortfolioItem[] = [
     id: 4,
     title: "Pastel French",
     image:
-      "https://images.unsplash.com/photo-1636018942609-7d7ab1c8a1c8?w=800&q=80",
+      "https://images.unsplash.com/photo-1519014816548-bf5fe059798b?w=800&q=80",
     description: "Modern twist on classic French with pastel tips",
     likes: 15,
   },

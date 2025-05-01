@@ -2,9 +2,14 @@ export const Location = () => {
   return (
     <section id="location" className="py-16 bg-white">
       <div className="max-w-4xl mx-auto text-center px-4">
-        <h2 className="text-5xl font-bold mb-4 text-gray-800">Location</h2>
+        <h2 className="text-5xl font-bold">
+          Our{" "}
+          <span className="text-5xl font-bold  bg-gradient-to-r from-pink-400 to-purple-500 pb-2 transition-all duration-300 drop-shadow-sm text-gradient bg-clip-text text-transparent">
+            Location
+          </span>
+        </h2>
         <p className="text-gray-600 mb-8">
-          Come visit at my work, appointments are available by booking above!
+          Come visit at our work, appointments are available by booking above!
         </p>
         <div className="relative overflow-hidden rounded-2xl shadow-lg">
           <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-pink-400 to-purple-500" />
