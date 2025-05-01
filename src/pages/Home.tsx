@@ -3,12 +3,10 @@ import HeroSection from "@/components/HeroSection";
 import ServicesSection from "@/components/ServicesSection";
 import PortfolioGallery from "@/components/PortfolioGallery";
 import BookingForm from "@/components/BookingForm";
-import { Button } from "@/components/ui/button";
-import { Instagram } from "lucide-react";
-import logo from "/assets/images/logo.png";
 import { Footer } from "@/components/Footer";
 import { AboutMe } from "@/components/AboutMe";
 import { InstagramFeed } from "@/components/Instafeed";
+import { Location } from "@/components/Location";
 
 export default function Home() {
   return (
@@ -29,6 +27,9 @@ export default function Home() {
         {/* Portfolio Gallery */}
         <PortfolioGallery />
 
+        {/* Instagram Feed */}
+        <InstagramFeed />
+
         {/* Booking Form */}
         <section id="booking" className="py-20 bg-gray-50">
           <div className="container mx-auto px-4">
@@ -44,8 +45,8 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Instagram Feed */}
-        <InstagramFeed />
+        {/* Location section */}
+        <Location />
 
         {/* About Section */}
         <AboutMe />

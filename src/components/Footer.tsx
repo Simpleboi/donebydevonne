@@ -33,9 +33,14 @@ export const Footer = () => {
             <h3 className="text-xl font-bold mb-4">Contact</h3>
             <ul className="text-gray-400 space-y-2">
               <li>123 Ya Mama Street, XYZ City</li>
-              <li>Phone: <a href="tel:+">(425) 535-7080</a></li>
               <li className="hover:text-purple-400 transition-all">
-                Email: <a href="mailto:devonnefarson1@gmail.com?subject=Inquiry For Devonne">devonnefarson1@gmail.com</a>
+                Phone: <a href="tel:+">(425) 535-7080</a>
+              </li>
+              <li className="hover:text-purple-400 transition-all">
+                Email:{" "}
+                <a href="mailto:devonnefarson1@gmail.com?subject=Inquiry For Devonne">
+                  devonnefarson1@gmail.com
+                </a>
               </li>
             </ul>
           </div>
