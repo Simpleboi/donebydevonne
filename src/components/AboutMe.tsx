@@ -42,7 +42,7 @@ export const AboutMe = () => {
                   size="sm"
                   className="border-pink-600 text-pink-600 hover:bg-pink-50 flex gap-2"
                 >
-                  <i className="bx bxl-instagram text-lg"></i> @personal IG? idk
+                  <i className="bx bxl-instagram text-lg"></i> @Personal IG? idk
                 </Button>
               </a>
             </div>
