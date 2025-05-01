@@ -47,40 +47,7 @@ import {
   Search,
 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-
-// Mock data for demonstration
-const mockBookings: BookingData[] = [
-  {
-    id: "1",
-    name: "Jane Smith",
-    email: "jane@example.com",
-    phone: "(123) 456-7890",
-    service: "nail-painting",
-    date: new Date(),
-    time: "10:00 AM",
-    notes: "First time client",
-  },
-  {
-    id: "2",
-    name: "Emily Johnson",
-    email: "emily@example.com",
-    phone: "(234) 567-8901",
-    service: "gel-coating",
-    date: new Date(),
-    time: "2:00 PM",
-    notes: "",
-  },
-  {
-    id: "3",
-    name: "Sarah Williams",
-    email: "sarah@example.com",
-    phone: "(345) 678-9012",
-    service: "custom-nail-art",
-    date: new Date(new Date().setDate(new Date().getDate() + 1)),
-    time: "11:00 AM",
-    notes: "Wants floral design",
-  },
-];
+import { mockBookings } from "@/data/Bookings";
 
 const AdminDashboard = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
