@@ -46,13 +46,13 @@ const PortfolioGallery = ({
       <div className="container mx-auto px-4">
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-2">
-            Our{" "}
+            My{" "}
             <span className="bg-gradient-to-r from-pink-400 to-purple-500 pb-2 transition-all duration-300 drop-shadow-sm text-gradient bg-clip-text text-transparent">
               Work
             </span>
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto mb-6">
-            Browse through our gallery of stunning nail designs created by
+            Browse through my gallery of stunning nail designs created by
             Devonne and find inspiration for your next appointment.
           </p>
 

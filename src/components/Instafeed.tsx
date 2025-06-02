@@ -49,13 +49,13 @@ export const InstagramFeed = () => {
     <section id="instagram" className="py-22">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-2 mt-6">
-          Follow Us on{" "}
+          Follow me on{" "}
           <span className="bg-gradient-to-r from-pink-400 to-purple-500 pb-2 transition-all duration-300 drop-shadow-sm text-gradient bg-clip-text text-transparent">
             Instagram
           </span>
         </h2>
         <p className="text-gray-600 text-center mb-8 max-w-2xl mx-auto">
-          Stay updated with our latest designs and promotions
+          Stay updated with the latest designs and promotions
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 px-8">
           {instagramFeed.map(({ imageSrc, link }, index) => (

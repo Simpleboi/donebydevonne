@@ -100,12 +100,12 @@ const ServicesSection = () => {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl md:text-4xl font-semibold text-gray-800 mb-2">
-            Our <span className="bg-gradient-to-r from-pink-400 to-purple-500 pb-2 transition-all duration-300 drop-shadow-sm text-gradient bg-clip-text text-transparent">Services</span>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-2">
+            My <span className="bg-gradient-to-r from-pink-400 to-purple-500 pb-2 transition-all duration-300 drop-shadow-sm text-gradient bg-clip-text text-transparent">Services</span>
           </h2>
           <div className="w-24 h-1 bg-pink-400 mx-auto mb-4"></div>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Discover our range of professional nail services designed to keep
+            Discover the range of professional nail services designed to keep
             your hands looking beautiful and well-maintained.
           </p>
         </motion.div>

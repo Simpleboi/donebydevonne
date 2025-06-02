@@ -33,11 +33,11 @@ export default function Home() {
         <InstagramFeed />
 
         {/* Booking Form */}
-        <section id="booking" className="py-20 bg-gray-50">
+        {/* <section id="booking" className="py-20 bg-gray-50">
           <div className="container mx-auto px-4 w-full">
             <div className="max-w-8xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-bold text-center my-2">
-                Book an Appointment
+                Book an Appointment 
               </h2>
               <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
                 Ready for beautiful nails? Schedule your appointment today
@@ -75,7 +75,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Location section */}
         <Location />
