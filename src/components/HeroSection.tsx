@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Button } from "./ui/button";
 import { Sparkles, Star } from "lucide-react";
+import Banner from "../../public/assets/images/donebydevonne.png"; 
 
 interface HeroSectionProps {
   title?: string;
@@ -16,7 +17,7 @@ const HeroSection = ({
   subtitle = "Luxury nail services for the modern woman",
   ctaText = "Book Now",
   onCtaClick = () => console.log("Book Now clicked"),
-  backgroundImage = "https://images.unsplash.com/photo-1607779097040-26e80aa78e66?w=1200&q=90",
+  backgroundImage = Banner,
 }: HeroSectionProps) => {
   return (
     <div className="relative h-[600px] sm:h-[650px] md:h-[700px] w-full bg-white overflow-hidden">
@@ -123,7 +124,7 @@ const HeroSection = ({
           </motion.div>
 
           <motion.h1
-            className="sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-3 sm:mb-4 bg-gradient-to-r from-pink-400 to-purple-500 pb-2 transition-all duration-300 drop-shadow-sm text-gradient bg-clip-text text-transparent"
+            className="sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-3 sm:mb-4 bg-gradient-to-r from-pink-400 to-purple-500 pb-2 transition-all duration-300 drop-shadow-sm text-gradient bg-clip-text text-transparent text-4xl"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{

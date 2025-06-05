@@ -23,18 +23,28 @@ export const AboutMe = () => {
               </span>
             </h2>
             <p className="text-gray-600 mb-4">
-              Hi, I'm Devonne! I have over [blank] amount of experience and this is
-              just a sample paragraph to express who I am or something like
-              that. I don't really know what to put here man I just write code n
-              shit.
+              Hello! Welcome to my nail page, I look forward to working with
+              you!
+              <br />
+              My name is Devonne Farson, and I am 19 years old. I have been
+              doing nails for about two years now, and I am fully self-taught. I
+              currently have two clients, four days a week. Originally from
+              Seattle, Washington, I recently moved to Houston, Texas, to
+              advance my nail business and pursue my license.
             </p>
             <p className="text-gray-600 mb-6">
-              This is a different paragraph, maybe to talk about specialization
-              or something like that. I'm just writing filler text so it looks full but this will be replaced with what Devonne says. Did you know that a group of flamingos is called a flamboyance? Shits tuff 
+              I love making people feel beautiful and giving them the
+              opportunity to express themselves through their nails. Building
+              personal relationships with all my clients is one of my favorite
+              parts of what I do, and I hope to get the chance to do so with
+              each and every one of you reading this!
+              <br />
+              P.S. There will always be snacks available for you to choose from
+              at your appointment {":)"}
             </p>
             <div className="flex space-x-4">
               <a
-                href="https://www.instagram.com/donebydevonne/"
+                href="https://www.instagram.com/devonnefarson?igsh=MXdta28xdnM0cmx1cQ%3D%3D&utm_source=qr"
                 target="_blank"
               >
                 <Button
@@ -42,7 +52,19 @@ export const AboutMe = () => {
                   size="sm"
                   className="border-pink-600 text-pink-600 hover:bg-pink-50 flex gap-2"
                 >
-                  <i className="bx bxl-instagram text-lg"></i> @Personal IG? idk
+                  <i className="bx bxl-instagram text-lg"></i> @devonnefarson
+                </Button>
+              </a>
+              <a
+                href="https://www.tiktok.com/@ilydevonne?_t=ZP-8wvtBfhcwAg&_r=1"
+                target="_blank"
+              >
+                <Button
+                  variant="outline"
+                  size="sm"
+                  className="border-pink-600 text-pink-600 hover:bg-pink-50 flex gap-2"
+                >
+                  TT @ilydevonne
                 </Button>
               </a>
             </div>

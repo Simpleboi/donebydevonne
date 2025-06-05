@@ -39,9 +39,9 @@ export const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">Hours</h3>
             <ul className="text-gray-400 space-y-2">
-              <li>Monday - Friday: Xam - Xpm</li>
-              <li>Saturday: Xam - Xpm</li>
-              <li>Sunday: Closed?</li>
+              <li>Monday - Friday: 10:00 am - 5:00 pm</li>
+              <li>Saturday: 1:00 pm - 5:00 pm</li>
+              <li>Sunday: 1:00 pm - 5:00 pm</li>
             </ul>
           </div>
           <div>
@@ -52,7 +52,7 @@ export const Footer = () => {
                 target="_blank"
               >
                 <li className="hover:text-purple-400 transition-all">
-                  <i className="bx bx-home"></i> 123 Ya Mama Street, XYZ City
+                  <i className="bx bx-home"></i> 1617 Fannin St, Houston, TX 77002
                 </li>
               </a>
               <li className="hover:text-purple-400 transition-all">

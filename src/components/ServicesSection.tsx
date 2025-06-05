@@ -63,27 +63,35 @@ const ServicesSection = () => {
   const services = [
     {
       icon: <Brush size={24} />,
-      title: "Nail Painting",
+      title: "Acrylic Full Set - Plain One Color",
       description:
-        "Express yourself with our premium polish application. Choose from a wide range of colors for a flawless finish.",
-      price: "$10+",
-      duration: "5-10 minutes",
+        "A sleek and durable Acrylic Full Set in a single solid color, perfect for a clean and timeless look.",
+      price: "$40",
+      duration: "60 minutes",
     },
     {
       icon: <Droplet size={24} />,
-      title: "Gel Manicure",
+      title: "Acrylic Full Set - French Tip",
       description:
-        "Long-lasting, chip-resistant gel polish that keeps your nails looking perfect for weeks with a glossy shine.",
-      price: "$1,800+",
-      duration: "5-10 minutes",
+        "A classic French Tip Acrylic Full Set, offering a clean and elegant look with timeless white tips and a smooth, flawless finish.",
+      price: "$55",
+      duration: "60 minutes",
     },
     {
       icon: <Sparkles size={24} />,
-      title: "Acrylic Full Set",
+      title: "Acrylic Full Set - With Design",
       description:
         "Personalized designs created just for you. From simple accents to elaborate patterns, make a statement with custom art.",
-      price: "$2.50+",
-      duration: "5-10 minutes",
+      price: "$45 - $80",
+      duration: "60 minutes",
+    },
+    {
+      icon: <Sparkles size={24} />,
+      title: "Manicure",
+      description:
+        "A refreshing manicure that includes nail shaping, cuticle care, and a flawless polish application for beautifully groomed nails.",
+      price: "$25",
+      duration: "60 minutes",
     },
   ];
 
@@ -138,7 +146,7 @@ const ServicesSection = () => {
           className="text-center mt-12"
         >
           <p className="text-gray-600 italic mb-6">
-            All services include nail preparation, shaping, and cuticle care
+            All services include nail preparation, shaping, and cuticle care. Base prices can vary on length of nails.
           </p>
           <button className="bg-pink-500 hover:bg-pink-600 text-white font-medium py-3 px-8 rounded-full transition-colors shadow-md hover:shadow-lg">
             View Full Price List
