@@ -109,7 +109,10 @@ const ServicesSection = () => {
           className="text-center mb-12"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-2">
-            My <span className="bg-gradient-to-r from-pink-400 to-purple-500 pb-2 transition-all duration-300 drop-shadow-sm text-gradient bg-clip-text text-transparent">Services</span>
+            My{" "}
+            <span className="bg-gradient-to-r from-pink-400 to-purple-500 pb-2 transition-all duration-300 drop-shadow-sm text-gradient bg-clip-text text-transparent">
+              Services
+            </span>
           </h2>
           <div className="w-24 h-1 bg-pink-400 mx-auto mb-4"></div>
           <p className="text-gray-600 max-w-2xl mx-auto">
@@ -146,7 +149,9 @@ const ServicesSection = () => {
           className="text-center mt-12"
         >
           <p className="text-gray-600 italic mb-6">
-            All services include nail preparation, shaping, and cuticle care. Base prices can vary on length of nails.
+            All services include nail preparation, shaping, and cuticle care.
+            Base prices can vary on length of nails. <br />
+            All products are gel + shellac products.
           </p>
           <button className="bg-pink-500 hover:bg-pink-600 text-white font-medium py-3 px-8 rounded-full transition-colors shadow-md hover:shadow-lg">
             View Full Price List

@@ -1,8 +1,7 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { Button } from "./ui/button";
 import { Sparkles, Star } from "lucide-react";
-import Banner from "../../public/assets/images/donebydevonne.png"; 
+import Banner from "/assets/images/donebydevonne.png"; 
 
 interface HeroSectionProps {
   title?: string;
