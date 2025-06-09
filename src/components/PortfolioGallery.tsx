@@ -11,10 +11,7 @@ import {
 import { Card, CardContent } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogClose } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
-import manicure from "../../public/assets/images/manicure.png";
-import onecolor from "../../public/assets/images/onecolor.png";
-import design from "../../public/assets/images/design.png";
-import frenchtip from "../../public/assets/images/frenchtip.png";
+import { NailServices } from "@/data/Portfolio";
 
 interface PortfolioItem {
   id: number;
@@ -30,7 +27,7 @@ interface PortfolioGalleryProps {
 }
 
 const PortfolioGallery = ({
-  items = defaultItems,
+  items = NailServices,
   className,
 }: PortfolioGalleryProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -293,37 +290,5 @@ const PortfolioGallery = ({
     </section>
   );
 };
-
-// Default portfolio items if none are provided
-const defaultItems: PortfolioItem[] = [
-  {
-    id: 1,
-    title: "Manicure",
-    image: manicure,
-    description: "Elegant pink marble effect with gold accents",
-    likes: 24,
-  },
-  {
-    id: 2,
-    title: "Acrylic Set - One Color",
-    image: onecolor,
-    description: "Stunning ombré with glitter gradient finish",
-    likes: 18,
-  },
-  {
-    id: 3,
-    title: "Acrylic Set - With Design",
-    image: design,
-    description: "Sophisticated design with crystal embellishments",
-    likes: 32,
-  },
-  {
-    id: 4,
-    title: "Acrylic Set - French Tip",
-    image: frenchtip,
-    description: "Modern twist on classic French with pastel tips",
-    likes: 15,
-  },
-];
 
 export default PortfolioGallery;
