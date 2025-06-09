@@ -11,6 +11,10 @@ import {
 import { Card, CardContent } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogClose } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
+import manicure from "../../public/assets/images/manicure.png";
+import onecolor from "../../public/assets/images/onecolor.png";
+import design from "../../public/assets/images/design.png";
+import frenchtip from "../../public/assets/images/frenchtip.png";
 
 interface PortfolioItem {
   id: number;
@@ -294,75 +298,31 @@ const PortfolioGallery = ({
 const defaultItems: PortfolioItem[] = [
   {
     id: 1,
-    title: "Pink Marble",
-    image:
-      "https://images.unsplash.com/photo-1632345031435-8727f6897d53?w=800&q=80",
+    title: "Manicure",
+    image: manicure,
     description: "Elegant pink marble effect with gold accents",
     likes: 24,
   },
   {
     id: 2,
-    title: "Glitter Ombré",
-    image:
-      "https://images.unsplash.com/photo-1604654894611-6973b376cbde?w=800&q=80",
+    title: "Acrylic Set - One Color",
+    image: onecolor,
     description: "Stunning ombré with glitter gradient finish",
     likes: 18,
   },
   {
     id: 3,
-    title: "Crystal Accents",
-    image:
-      "https://images.unsplash.com/photo-1601055283742-8b27e81b5553?w=800&q=80",
+    title: "Acrylic Set - With Design",
+    image: design,
     description: "Sophisticated design with crystal embellishments",
     likes: 32,
   },
   {
     id: 4,
-    title: "Pastel French",
-    image:
-      "https://images.unsplash.com/photo-1519014816548-bf5fe059798b?w=800&q=80",
+    title: "Acrylic Set - French Tip",
+    image: frenchtip,
     description: "Modern twist on classic French with pastel tips",
     likes: 15,
-  },
-  {
-    id: 5,
-    title: "Floral Art",
-    image:
-      "https://images.unsplash.com/photo-1607779097040-26e80aa78e66?w=800&q=80",
-    description: "Delicate hand-painted floral designs",
-    likes: 29,
-  },
-  {
-    id: 6,
-    title: "Matte Nude",
-    image:
-      "https://images.unsplash.com/photo-1632345031435-8727f6897d53?w=800&q=80",
-    description: "Sophisticated matte nude with minimalist design",
-    likes: 21,
-  },
-  {
-    id: 7,
-    title: "Geometric Patterns",
-    image:
-      "https://images.unsplash.com/photo-1601055283742-8b27e81b5553?w=800&q=80",
-    description: "Modern geometric nail art with metallic details",
-    likes: 17,
-  },
-  {
-    id: 8,
-    title: "Holographic Shine",
-    image:
-      "https://images.unsplash.com/photo-1571290274554-6a2eaa771e5f?w=800&q=80",
-    description: "Eye-catching holographic finish that changes in light",
-    likes: 26,
-  },
-  {
-    id: 9,
-    title: "Jewel Tones",
-    image:
-      "https://images.unsplash.com/photo-1519014816548-bf5fe059798b?w=800&q=80",
-    description: "Rich jewel-toned colors with glossy finish",
-    likes: 22,
   },
 ];
 
