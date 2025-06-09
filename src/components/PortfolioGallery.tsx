@@ -57,7 +57,7 @@ const PortfolioGallery = ({
             Devonne and find inspiration for your next appointment.
           </p>
 
-          <div className="flex flex-wrap justify-center gap-2 mb-8">
+          {/* <div className="flex flex-wrap justify-center gap-2 mb-8">
             <Button
               variant={activeFilter === "all" ? "default" : "outline"}
               size="sm"
@@ -110,7 +110,7 @@ const PortfolioGallery = ({
             >
               Nail Art
             </Button>
-          </div>
+          </div> */}
         </div>
 
         <div className="relative max-w-5xl mx-auto">
@@ -148,7 +148,7 @@ const PortfolioGallery = ({
                               {item.description}
                             </p>
                           </div>
-                          <Button
+                          {/* <Button
                             variant="ghost"
                             size="icon"
                             className={cn(
@@ -168,7 +168,7 @@ const PortfolioGallery = ({
                               )}
                             />
                             <span className="sr-only">Like</span>
-                          </Button>
+                          </Button> */}
                         </div>
                       </CardContent>
                     </Card>
@@ -194,7 +194,7 @@ const PortfolioGallery = ({
             ))}
           </div>
 
-          {/* Image Detail Modal */}
+          {/* Image Detail Modal - Dialog*/}
           <Dialog
             open={!!selectedItem}
             onOpenChange={(open) => !open && setSelectedItem(null)}

@@ -67,7 +67,7 @@ const ServicesSection = () => {
       description:
         "A sleek and durable Acrylic Full Set in a single solid color, perfect for a clean and timeless look.",
       price: "$40",
-      duration: "60 minutes",
+      duration: "1 hour, 15 minutes",
     },
     {
       icon: <Droplet size={24} />,
@@ -75,7 +75,7 @@ const ServicesSection = () => {
       description:
         "A classic French Tip Acrylic Full Set, offering a clean and elegant look with timeless white tips and a smooth, flawless finish.",
       price: "$55",
-      duration: "60 minutes",
+      duration: "1 hour, 45 minutes",
     },
     {
       icon: <Sparkles size={24} />,
@@ -83,7 +83,7 @@ const ServicesSection = () => {
       description:
         "Personalized designs created just for you. From simple accents to elaborate patterns, make a statement with custom art.",
       price: "$45 - $80",
-      duration: "60 minutes",
+      duration: "1 hour, 45 minutes - 3 hours",
     },
     {
       icon: <Sparkles size={24} />,
@@ -91,7 +91,7 @@ const ServicesSection = () => {
       description:
         "A refreshing manicure that includes nail shaping, cuticle care, and a flawless polish application for beautifully groomed nails.",
       price: "$25",
-      duration: "60 minutes",
+      duration: "45 minutes - 1 hour",
     },
   ];
 
