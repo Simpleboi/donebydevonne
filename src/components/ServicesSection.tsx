@@ -153,9 +153,9 @@ const ServicesSection = () => {
             Base prices can vary on length of nails. <br />
             All products are gel + shellac products.
           </p>
-          <button className="bg-pink-500 hover:bg-pink-600 text-white font-medium py-3 px-8 rounded-full transition-colors shadow-md hover:shadow-lg">
+          {/* <button className="bg-pink-500 hover:bg-pink-600 text-white font-medium py-3 px-8 rounded-full transition-colors shadow-md hover:shadow-lg">
             View Full Price List
-          </button>
+          </button> */}
         </motion.div>
       </div>
     </section>

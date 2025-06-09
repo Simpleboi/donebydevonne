@@ -20,20 +20,20 @@ export const Footer = () => {
               >
                 <Instagram className="h-5 w-5" /> @donebydevonne
               </a>
-              <a
+              {/* <a
                 href="#"
                 className="text-gray-400 hover:text-white transition-colors flex items-center gap-2"
                 target="_blank"
               >
                 <i className="bx bxl-twitter h-full"></i> @donebydevonne
-              </a>
-              <a
+              </a> */}
+              {/* <a
                 href="#"
                 className="text-gray-400 hover:text-white transition-colors flex items-center gap-2"
                 target="_blank"
               >
                 <i className="bx bxl-youtube h-full"></i> @donebydevonne
-              </a>
+              </a> */}
             </div>
           </div>
           <div>

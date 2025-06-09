@@ -9,7 +9,7 @@ export const Location = () => {
           </span>
         </h2>
         <p className="text-gray-600 mb-8">
-          Come visit at our work, appointments are available by booking above!
+          Come visit at my work!
         </p>
         <div className="relative overflow-hidden rounded-2xl shadow-lg">
           <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-pink-400 to-purple-500" />

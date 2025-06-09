@@ -19,7 +19,7 @@ const HeroSection = ({
   backgroundImage = Banner,
 }: HeroSectionProps) => {
   return (
-    <div className="relative h-[600px] sm:h-[650px] md:h-[700px] w-full bg-white overflow-hidden">
+    <div className="relative h-[600px] sm:h-[650px] md:h-[700px] w-full bg-white overflow-hidden" id="Hero">
       {/* Background Image with Enhanced Parallax Effect */}
       <motion.div
         className="absolute inset-0 z-0"
@@ -148,7 +148,7 @@ const HeroSection = ({
             {subtitle}
           </motion.p>
 
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{
@@ -167,7 +167,7 @@ const HeroSection = ({
               <Sparkles className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
               {ctaText}
             </Button>
-          </motion.div>
+          </motion.div> */}
         </motion.div>
       </div>
 

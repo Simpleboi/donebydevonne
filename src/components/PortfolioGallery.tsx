@@ -221,7 +221,9 @@ const PortfolioGallery = ({
                       {selectedItem.description}
                     </p>
 
-                    <div className="mb-6">
+                    {/* Details Section */}
+
+                    {/* <div className="mb-6">
                       <h4 className="text-sm font-medium text-gray-500 mb-2">
                         DETAILS
                       </h4>
@@ -239,9 +241,9 @@ const PortfolioGallery = ({
                           <span>Custom design available</span>
                         </li>
                       </ul>
-                    </div>
+                    </div> */}
 
-                    <Button
+                    {/* <Button
                       className="w-full bg-pink-500 hover:bg-pink-600 text-white"
                       onClick={() => {
                         setSelectedItem(null);
@@ -251,7 +253,7 @@ const PortfolioGallery = ({
                       }}
                     >
                       Book This Design
-                    </Button>
+                    </Button> */}
 
                     {/* <div className="mt-4 flex justify-center">
                       <Button

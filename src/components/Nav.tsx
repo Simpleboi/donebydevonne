@@ -2,6 +2,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import { Button } from "./ui/button";
 import { Menu, X } from "lucide-react";
+import Logo from "../../public/assets/images/logo.png";
+import { Link } from "react-router-dom";
 
 export const Nav = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -15,7 +17,7 @@ export const Nav = () => {
           transition={{ duration: 0.5 }}
           className="text-2xl font-bold text-pink-600 flex items-center"
         >
-          <span className="mr-2 text-3xl">💅</span>
+          <span className="mr-2 text-3xl"></span>
           <motion.span
             className="bg-gradient-to-r from-pink-400 via-pink-500 to-purple-600 bg-clip-text text-transparent"
             animate={{
@@ -30,7 +32,7 @@ export const Nav = () => {
               backgroundSize: "200% 200%",
             }}
           >
-            Done by Devonne
+            <a href="#Hero">Done by Devonne</a>
           </motion.span>
         </motion.div>
 
@@ -40,7 +42,6 @@ export const Nav = () => {
             { href: "#home", label: "Home" },
             { href: "#services", label: "Services" },
             { href: "#instagram", label: "Gallery" },
-            { href: "#booking", label: "Book Now" },
             { href: "#about", label: "About" },
           ].map((item, index) => (
             <motion.a
@@ -85,7 +86,6 @@ export const Nav = () => {
                 { href: "#home", label: "Home" },
                 { href: "#services", label: "Services" },
                 { href: "#instagram", label: "Gallery" },
-                { href: "#booking", label: "Book Now" },
                 { href: "#about", label: "About" },
               ].map((item, index) => (
                 <motion.a
